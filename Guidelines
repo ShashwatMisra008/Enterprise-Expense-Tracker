@@ -83,10 +83,6 @@ Analytics & Reporting: Plotly aggregates the processed data into interactive cha
 
 
 
-Update File
 
-git add .
-git commit -m "Your update message"
-git push
 
 
