@@ -1,6 +1,12 @@
 # 🏢 Enterprise Financial & Expense Control Center
 
-A production-grade, multi-tenant expense management and corporate auditing platform built with **FastAPI**, **Streamlit**, **SQLite**, and **ReportLab**. Designed to help modern enterprises streamline expense submission, enforce strict budgetary guardrails, prevent duplicate receipt fraud, and generate executive-level reports.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://enterprise-expense-tracker-shashwatmisra.streamlit.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/ShashwatMisra008/Enterprise-Expense-Tracker)
+[![Python Version](https://img.shields.io/badge/Python-3.14%2B-blue?logo=python)](https://www.python.org/)
+
+A production-grade, multi-tenant expense management and corporate auditing platform built with FastAPI, Streamlit, SQLite, and ReportLab. Designed to help modern enterprises streamline expense submission, enforce strict budgetary guardrails, prevent duplicate receipt fraud, and generate executive-level reports.
+
+🔗 **Live App URL:** [https://enterprise-expense-tracker-shashwatmisra.streamlit.app/](https://enterprise-expense-tracker-shashwatmisra.streamlit.app/)
 
 ---
 
@@ -16,7 +22,7 @@ A production-grade, multi-tenant expense management and corporate auditing platf
   * Interactive Plotly charts visualising cash-outflow trends and departmental spend distribution.
 * **📄 Professional Audit & Reporting:**
   * Generate formal, publication-ready **PDF audit statements** using ReportLab.
-  * Export structured CSV audit reports for accounting handoffs.
+  * Export structured **CSV audit reports** for accounting handoffs.
 
 ---
 
@@ -29,30 +35,22 @@ A production-grade, multi-tenant expense management and corporate auditing platf
 
 ---
 
-🔑 **Access Credentials (For Testing)**
+## 🔑 Access Credentials (For Testing)
 
-**Employee Portal**: Use any corporate ID/email (e.g., employee@company.com)
+* **Employee Portal:** Use any corporate ID/email (e.g., `employee@company.com`)
+* **Admin Portal:** Log in with an admin-recognised ID and use the password: 
+  > `CorporateAdmin2026!`
 
-**Admin Portal**: Log in with an admin-recognised ID and use the password:
+---
 
-CorporateAdmin2026!
+## 📂 Project Structure
 
-**Project Structure**
-
+```text
 Enterprise-Expense-Tracker/
 │
+├── app.py             # Streamlit SaaS user interface & database engine
 ├── main.py            # FastAPI REST API & endpoints
 ├── database.py        # SQLite database operations & schema init
 ├── models.py          # Pydantic data validation models
-├── app.py             # Streamlit SaaS user interface
+├── requirements.txt   # Cloud deployment dependencies configuration
 └── README.md          # Project documentation
-
-## ⚙️ Installation & Local Setup
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/ShashwatMisra008/Enterprise-Expense-Tracker.git](https://github.com/ShashwatMisra008/Enterprise-Expense-Tracker.git)
-cd Enterprise-Expense-Tracker
-
-📄 License
-This project is developed as an enterprise showcase application. Feel free to use, modify, and expand.
