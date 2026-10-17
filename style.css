@@ -1,30 +1,119 @@
-/* Enterprise Expense Hub Custom SaaS Styling */
+/* ==========================================================================
+   ENTERPRISE EXPENSE HUB - SAAS UI DESIGN SYSTEM & THEME STYLESHEET
+   ========================================================================== */
 
+:root {
+    --primary-navy: #0f172a;
+    --secondary-slate: #1e293b;
+    --accent-blue: #2563eb;
+    --accent-hover: #1d4ed8;
+    --bg-light: #f8fafc;
+    --card-bg: #ffffff;
+    --border-subtle: #e2e8f0;
+    --text-primary: #0f172a;
+    --text-muted: #64748b;
+    --status-approved: #10b981;
+    --status-pending: #f59e0b;
+    --status-rejected: #ef4444;
+}
+
+/* Global Layout & Container Spacing */
 .main {
-    background-color: #f8fafc;
+    background-color: var(--bg-light);
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-primary);
 }
 
 .block-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem !important;
+    padding-bottom: 2.5rem !important;
+    max-width: 1400px;
 }
 
-h1, h2, h3 {
-    color: #1e293b;
-    font-family: 'Helvetica Neue', sans-serif;
+/* Typography Hierarchy */
+h1, h2, h3, h4 {
+    color: var(--secondary-slate);
     font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
+h1 {
+    font-size: 2.25rem;
+    border-bottom: 2px solid var(--border-subtle);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Executive KPI Metric Cards */
 .stMetric {
-    background-color: #ffffff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e2e8f0;
-    transition: transform 0.2s ease-in-out;
+    background-color: var(--card-bg);
+    padding: 18px 24px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+    border: 1px solid var(--border-subtle);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .stMetric:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.08);
+    border-color: #cbd5e1;
+}
+
+/* DataFrames, Audit Tables & Containers */
+.stDataFrame {
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+}
+
+/* Form Controls & Primary Buttons */
+.stButton > button[kind="primary"] {
+    background-color: var(--accent-blue);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.55rem 1.25rem;
+    border: none;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.stButton > button[kind="primary"]:hover {
+    background-color: var(--accent-hover);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* Sidebar Navigation Styling */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff;
+    border-right: 1px solid var(--border-subtle);
+}
+
+/* Custom Alert & Audit Status Badges */
+.badge-approved {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.badge-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.badge-rejected {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.85rem;
 }
