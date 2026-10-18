@@ -30,10 +30,10 @@ A production-grade, multi-tenant expense management and corporate auditing platf
 
 ## 🛠️ Languages & Tech Stack
 
-* **Core Languages:** Python, SQL
-* **Backend & API:** FastAPI, Pydantic (Data Validation & Schema Enforcement), Uvicorn
-* **Frontend & BI Visuals:** Streamlit, Plotly Express, Pandas
-* **Database & Reporting:** SQLite3 (Relational Storage & Unique Constraints), ReportLab (Automated PDF Generation)
+* **Core Languages:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+* **Backend & API:** ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white) *(Data Validation & Schema Enforcement)* ![Uvicorn](https://img.shields.io/badge/Uvicorn-2C3E50?style=flat-square&logo=gunicorn&logoColor=white)
+* **Frontend & BI Visuals:** ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![Plotly Express](https://img.shields.io/badge/Plotly_Express-3F4F75?style=flat-square&logo=plotly&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+* **Database & Reporting:** ![SQLite3](https://img.shields.io/badge/SQLite3-003B57?style=flat-square&logo=sqlite&logoColor=white) *(Relational Storage & Unique Constraints)* ![ReportLab](https://img.shields.io/badge/ReportLab-CC0000?style=flat-square&logo=adobeacrobatreader&logoColor=white) *(Automated PDF Generation)*
 
 ---
 
