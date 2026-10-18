@@ -102,3 +102,5 @@ def set_budget(username: str, category: str, limit: float):
 def get_budgets(username: str):
     with get_connection() as conn:
         return {row["category"]: row["monthly_limit"] for row in conn.execute("SELECT * FROM budgets WHERE username = ? OR username = 'global'", (username,)).fetchall()}
+
+    
